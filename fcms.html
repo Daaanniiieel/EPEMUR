@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/fcms.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&display=swap" rel="stylesheet">
+    <script src="js/fcms.js"></script>
+    <script src="js/reloj.js"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul class="menu-horizontal">
+                <li><a href="index.html">Inicio</a></li>
+                <li>
+                    <a href="#">Aplicaciones</a>
+                    <ul class="menu-vertical">
+                        <li><a href="#">Masa Corporal</a></li>
+                        <li><a href="fcms.html">Pulsaciones adecuadas</a></li>
+                        <li><a href="categoria.html">Su categoria de edad</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">Aviso Legal</a>
+                </li>
+                <li><a href="#">Horario</a></li>
+    
+            </ul>
+        </nav>
+
+            <div class="reloj">
+            <div id="anio"></div>
+            <div id="dia"></div>
+            <div id="mes"></div>
+            </div>
+    </header>
+
+   
+    <div class="container">
+        <h1>Calculador de Pulsaciones por Minuto</h1>
+        <div class="input_area">
+            <h2> Edad </h2>
+            <input id="age" type="number">
+        </div>
+        <div class="input_area">
+            <h2>Sexo </h2>
+            <select id="opciones">
+                <option value="mujer">Mujer</option>
+                <option value="hombre">Hombre</option>
+            </select>
+        </div>
+        <br>
+        <button class="bn29" onclick="calculate()">Calcular</button>
+        <br>
+        <br>
+        <textarea name="" id="text_area" rows="8"></textarea>
+        </div>
+       
+    </div>  
+    <script src="fcms.js"></script>
+</body>
+</html>
